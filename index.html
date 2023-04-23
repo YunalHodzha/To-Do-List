@@ -7,19 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        body {
+          font-family: "Sofia", sans-serif;
+        }
+        </style>
     <title>Document</title>
 </head>
 
 <body>
     <div class="container">
         <div class="nav">
-            <h2><i class="fa-solid fa-clipboard-check"></i>To-do List</h2>
+            <h2>To-do List</h2>
             <div class="user-input">
-                <input id="input" type="text"><button onclick="addItem()">Submit</button>
+                <input id="input" type="text" placeholder="Enter an item.." required>
             </div>
+            <div class="button"><button id="button" onclick="addItem()">Submit</button></div>
         </div>
     </div>
-    <div class="container">
+    <div class="list">
         <div class="to-do-items"></div>
     </div>
     <script src="script.js"></script>

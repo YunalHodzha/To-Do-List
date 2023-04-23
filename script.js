@@ -9,6 +9,11 @@ input.addEventListener("keydown", function (event) {
 })
 
 function addItem() {
+    if(input.value === "") {
+        alert("Input is not valid")
+        return
+    }
+
     let divParent = document.createElement("div");
     let divChild = document.createElement("div");
     let checkIcon = document.createElement("i");
